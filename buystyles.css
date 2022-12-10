@@ -1,0 +1,136 @@
+body {
+    background-image: url(img/watercolor-paper-texture\ \(1\).jpg);
+    background-attachment: fixed;
+    background-size: 60%;
+}
+
+.navcontainer {
+    display: flex;
+}
+
+.logo {
+    flex-basis: 35%;
+}
+
+.ab {
+    flex-basis: 50%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.ab :hover {
+    text-align: center;
+    font-size: 30px;
+}
+.home {
+    flex-basis: 30%;
+    text-decoration: none;
+}
+
+.contact {
+    flex-basis: 30%;
+    text-decoration: none;
+
+}
+.about{
+    flex-basis: 30%;
+    text-decoration: none;
+}
+
+.login{
+    flex-basis: 20%;
+    text-align: right;
+    
+    margin: 10px;
+
+}
+.login :hover{
+    background-color: greenyellow;
+}
+
+#loginbtn{
+ height: 35px;
+ width: 65px;
+ border-radius: 20px;
+}
+
+.container{
+    display:flex;
+   
+}
+
+
+.filter{
+    margin-top: 20px;
+    display: flex;
+    border-style: solid;
+    background-color: white;
+    width: 400px;
+    height: 520px;
+}
+
+.product{
+    width: 240px;
+    margin: auto;
+    margin-left: 85px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px;
+    border-style: solid;
+}
+
+.heading{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.price{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    box-shadow: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.menu{
+    width: 80%;
+}
+img{
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.titles{
+    font-weight: bold;
+    padding-left: 100px;
+    font-size: 25px;
+}
+
+.range{
+    display: flex;
+    text-align: center;
+}
+
+.box{
+    width: 60px;
+}
+
+.subtitles{
+    padding-left: 15px;
+    font-weight: bold;
+    font-weight: 400;
+}
+
+.options{
+    padding-left: 40px;
+}
+
+
+

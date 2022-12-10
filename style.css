@@ -1,0 +1,185 @@
+
+
+body {
+    /* background-image: url('img/new\ bg.png'); */
+    background-image: url(img/watercolor-paper-texture\ \(1\).jpg);
+    background-size: 100%;
+    
+}
+
+
+.navcontainer {
+    display: flex;
+}
+
+.logo {
+    flex-basis: 35%;
+}
+
+.ab {
+    flex-basis: 50%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.ab :hover {
+    text-align: center;
+    font-size: 30px;
+}
+.home {
+    flex-basis: 30%;
+    text-decoration: none;
+}
+
+.contact {
+    flex-basis: 30%;
+    text-decoration: none;
+
+}
+.about{
+    flex-basis: 30%;
+    text-decoration: none;
+}
+
+.login{
+    flex-basis: 20%;
+    text-align: right;
+    
+    margin: 10px;
+
+}
+.login :hover{
+    background-color: greenyellow;
+}
+
+#loginbtn{
+ height: 35px;
+ width: 65px;
+ border-radius: 20px;
+}
+
+.buysell{
+    display: flex;
+   margin: 30px;
+   margin-top: -20px;
+   text-align: center;
+}
+.image{
+    flex-basis: 40%;
+    text-align: right;
+    margin-top: 50px;
+}
+.head{
+    flex-basis: 60%;
+    margin-left: 90px;
+    text-align: center;
+}
+.heading{
+    font-size: 30px;
+    color:black;
+}
+.button{
+    display: flex;
+    margin: 0px;
+}
+.button :hover{
+    height: 60px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+.btn1 {
+    flex-basis: 50%;
+    margin-top: 30px;
+    height: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    color:white;
+    
+}
+#buy{
+    background-color: #e0e00e;
+}
+#sell{
+    background-color: rgb(224, 39, 224);
+}
+
+#c1{
+    text-align: center;
+    font-size: 76px;
+    color: rgb(9, 24, 65);
+    margin: -10px;
+}
+.container1{
+    padding-top: 10px;
+    font-size: 20px;
+    width:80%;
+    margin: 70px auto;
+    margin-top: 10px;
+    color: rgb(9, 24, 65);
+}
+
+
+.contact-box{
+
+    background: transparent;
+    display: flex;
+    margin-top: none;
+   
+
+}
+.contact-left{
+    flex-basis: 70%;
+    font-size: xx-large;
+    color: rgb(9, 24, 65);
+    margin: auto;
+
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.input-row .input-group{
+
+     flex-basis:45% ;
+}
+
+.input-row input {
+    width: 100%;
+    color: rgb(9, 24, 65);
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(9, 24, 65);
+    outline: none;
+}
+ textarea{
+    width: 100%;
+    height: auto;
+    color: rgb(9, 24, 65);
+    outline: none;
+    border-radius: 1px solid white ;
+    background: transparent;
+}
+ /* how it works section */
+.howitworks1{
+    display: flex;
+    color: rgb(9, 24, 65);
+    margin-top: 10px;
+    margin: 20px;
+
+}
+.listaBook{
+    flex-basis: 50%;
+    text-align: left;
+    text-align: center;
+}
+.listabookIMG{
+    flex-basis: 50%;
+    text-align: center;
+    box-shadow: 20%;
+}

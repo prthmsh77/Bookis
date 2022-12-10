@@ -1,0 +1,137 @@
+body {
+    background-image: url(img/watercolor-paper-texture\ \(1\).jpg);
+    background-attachment: fixed;
+    background-size: 60%;
+}
+/* nav bar styling starts */
+.navcontainer {
+    display: flex;
+}
+
+.logo {
+    flex-basis: 35%;
+}
+
+.ab {
+    flex-basis: 50%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.ab :hover {
+    text-align: center;
+    font-size: 30px;
+}
+.home {
+    flex-basis: 30%;
+    text-decoration: none;
+}
+
+.contact {
+    flex-basis: 30%;
+    text-decoration: none;
+
+}
+.about{
+    flex-basis: 30%;
+    text-decoration: none;
+}
+
+.login{
+    flex-basis: 20%;
+    text-align: right;
+    
+    margin: 10px;
+
+}
+.login :hover{
+    background-color: greenyellow;
+}
+
+#loginbtn{
+ height: 35px;
+ width: 65px;
+ border-radius: 20px;
+}
+/* navbar styling ends */
+
+/* page stylling starts */
+.sellhead{
+    text-align: center;
+    font-size: 40px;
+    margin-top: -40px;
+}
+.sellcontainer{
+    display: flex;
+}
+.container-left{
+    position: relative;
+    background:fixed;
+    background:100%;
+    flex-basis: 30%;
+    display: flex;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity: 100%;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    text-align: center;
+    flex-basis: 100%;
+}
+.container-right{
+    flex-basis: 70%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    margin-top: 5px;
+}
+.bookname{
+    font-size: 30px ;
+    flex-basis: 30%;
+    display: flex;
+    margin: 30px;
+    text-align:center ;
+    }
+.bookname1{
+    flex-basis: 30%;
+    display: flex;
+    margin: 30px;
+    
+}
+.price{
+    flex-basis: 50%;
+    font-size: 30px ;
+    text-align: left;
+    display: flex;
+}
+.languagedrop{
+    flex-basis: 50%;
+    text-align: left;
+    font-size: 30px ;
+    display: flex;
+}
+.catdrop{
+    flex-basis: 30%;
+    margin: 30px;
+    font-size: 30px ;
+    text-align: left;
+    display: flex;
+}
+
+#uploadimg{
+    left: 0;
+    text-align: right;
+}

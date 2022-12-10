@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell page</title>
+    <link rel="stylesheet" href="SellStyle.css">
+</head>
+
+<body>
+    <div class="navcontainer">
+        <div class="logo">
+            <img src="img/logo-demo.png" alt="" width="150px">
+        </div>
+        <div class="ab">
+            <div class="home">
+                <a href="index.html" style="color: black;text-decoration: none;">Home</a>
+            </div>
+            <div class="contact">
+                <a href="index.html#contact" style="color: black;text-decoration: none;">Contact Us</a>
+            </div>
+            <div class="about">
+                <a href="about.html" style="color: black;text-decoration: none;">About</a>
+            </div>
+        </div>
+        <div class="login">
+            <button id="loginbtn" onclick="window.location.href='login page/login.html';">login</button>
+            <!-- <a href="login page/login.html">login</a> -->
+        </div>
+    </div>
+    <div class="sellhead">
+        <h1>Sell your book</h1>
+    </div>
+    <div class="sellcontainer">
+        <div class="container-left" id="imgbox">
+            <div class="img">
+                <input type="file" accept="image/*" name="img" id="file" style="display:none;"
+                    onchange="loadFile(event)">
+
+                <label for="file"><img src="img/Upload.png" alt="upload" style="opacity:20%;"></label>
+            </div>
+        </div>
+
+        <form name="google-sheet" method="post">
+            <div class="container-right">
+                <div class="bookname">
+                    <label style="margin-right:10px;">Book Name</label>
+                    <input type="text" name="Book Name">
+                </div>
+                <div class="bookname1">
+                    <div class="price">
+                        <label style="margin-right:10px;">Price</label>
+                        <input type="text" name="Book Price">
+                    </div>
+
+                    <div class="languagedrop">
+                        <form action="#">
+                            <label for="lang">Language</label>
+                            <select name="languages" id="lang" style="font-size: 25px; margin-right:10px;">
+                                <option value="Marathi">Marathi</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="English">English</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="catdrop">
+                    <form action="#">
+                        <label>Category</label>
+                        <select name="Category" id="catg" style="font-size: 25px; margin-right:10px;">
+                            <option value="Fixional">fixional</option>
+                            <option value="Non-Fixional">Non-Fixional</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Romantic">Romantic</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Advnture">Advnture</option>
+                            <option value="Informative">Informative</option>
+                        </select>
+                    </form>
+                </div>
+                <input type="submit" name="submit">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGcyvoW929BKFk3SBqUC4QUZWmsXA7txhs-hTXEqQj6bRhnMgjaU-PLaamIfVYCI-0Lw/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var imgbox = document.getElementById("imgbox")
+        var loadFile = function (event) {
+            imgbox.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+        }
+    </script>
+</body>
+
+</html>
